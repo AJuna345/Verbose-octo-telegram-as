@@ -1,68 +1,121 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8>
-    <meta name=" viewport" conetent="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-</head>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bear🤖</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- internal stylesheet < html doc/dom itself -->
+  <style>
     body {
-        font-family: Arial, sans-sarif;
-        margin: 20px;
-        background-color: Xf4f4f4;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
     }
 
     h1 {
-        color: #8e4fd6;
-    }
-
-    .login-container {
-        border: solid blue;
+      color: #8e4fd6;
     }
 
     h2 {
-        color: rgb(194, 58, 123);
-        background-color: rgb(200, 200, 0.1);
+      color: rgb(194, 153, 53);
+      background-color: rgba(200, 200, 200, 0.1);
     }
-</style>
+
+    .login-container {
+      border: solid 1px blue;
+    }
+
+    #author {
+      text-decoration: underline;
+    }
+
+    /*
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .btn-login {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn-login:hover {
+      background-color: #218838;
+    }
+
+    .message {
+      margin-top: 10px;
+      color: red;
+    } */
+
+    .inlineList>li {
+      display: inline;
+    }
+  </style>
+</head>
 
 <body>
-    <h1>Hello internet</h1>
-    <p>From internet</p>
 
-    <h2>features</h2>
-    <ul>
-        <li>login</li>
-        <li>search</li>
-        <a href="Content.html">
-        <li>content "card"</li>
-        </a>
-        <li>footer</li>
-    </ul>
+  <h1>🙋‍♂️ a web dev learning place.</h1>
+  <p id="author">by 🤖bc</p>
 
-    <div class="login-container">
-        <h2>Plain Login</h2>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn-login">Login</button>
-            <div id="message" class="message"></div>
-        </form>
-    </div>
+  <h2>layout/features</h2>
+  <ul class="inlineList">
+    <li>nav bar, w/login</li>
+    <li>search</li>
+    <li>content <a href="pages/content.html">content "cards"</a> with tags</li>
+  </ul>
 
-    <script>
-        // Fixed the spelling from 'consle' to 'console'
-        console.log("The DOM is fully loaded. Password hint: lasagna");
-    </script>
+  <h2>Where are we?</h2>
+  <ul>
+    <li>we are on our APP!</li>
+    <li>this APP is deployed via GitHub Pages, this URL: https://barrycumbie.github.io/baribot/</li>
+    <li>our <xmp><code /></xmp> lives on our GithHub Rep: https://github.com/barrycumbie/baribot</li>
+    <li>we've got basic, vanilla <xmp>
+        <html>
+      </xmp> going, but not much else
+    <li>we've got: absolute/relative links, bs5 css, a pages/ directory</li>
+  </ul>
+
+  <h2>Where are we going?</h2>
+  <ul>
+    <li>let's login, vanilla style</li>
+  </ul>
+
+  <a href="pages/vanilla-login.html">vanilla html login</a>
+
+
 </body>
+
 </html>
-
-
-
